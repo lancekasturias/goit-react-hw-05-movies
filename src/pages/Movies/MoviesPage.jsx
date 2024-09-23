@@ -9,7 +9,7 @@ const MoviesPage = () => {
   // const [searchQuery, setSearchQuery] = useState('Friends');
   const [movies, setMovies] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
-  const movieName = searchParams.get('query') ?? 'Friends'; // Default search query is 'Friends'
+  const movieName = searchParams.get('query'); // Default search query is 'Friends'
 
   const [isLoading, setIsLoading] = useState(false);
 

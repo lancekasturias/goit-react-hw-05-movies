@@ -59,13 +59,13 @@ const MovieDetailsPage = () => {
 
       <hr />
       <h3>Additional information</h3>
-      <div className={css.movieNav} >
-      <Link to="cast" className={css.link}>
-        <button className={css.infoButton}>Cast</button>
-      </Link>
-      <Link to="reviews" className={css.link}>
-        <button className={css.infoButton}>Reviews</button>
-      </Link>
+      <div className={css.movieNav}>
+        <Link to="cast" className={css.link}>
+          <button className={css.infoButton}>Cast</button>
+        </Link>
+        <Link to="reviews" className={css.link}>
+          <button className={css.infoButton}>Reviews</button>
+        </Link>
       </div>
       <hr />
       <Suspense fallback={<div>Loading...</div>}>
